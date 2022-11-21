@@ -13,7 +13,7 @@ public class smtpWithSocketProgramming
      {
           int delay = 1000;
           String user = "s1912076147@ru.ac.bd";
-          String pass = "naljztftxoydkyqy";
+          String pass = "";
           String username = new String(Base64.getEncoder().encode(user.getBytes()));
           String password = new String(Base64.getEncoder().encode(pass.getBytes())); 
           SSLSocketFactory sslsocketfactory = (SSLSocketFactory)SSLSocketFactory.getDefault();
