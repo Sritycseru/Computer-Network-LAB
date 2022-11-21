@@ -1,0 +1,58 @@
+switch:
+
+1.pc r ip deya lgabe same series r
+2.1st switch a giye
+
+  enable
+  config term
+  int fast0/1
+  sw mode access
+  no shutdown 
+  exit
+
+  enable
+  int fast0/2
+  sw mode access
+  no shutdown 
+  exit
+  
+  enable
+  int fast0/3
+  sw mode access
+  no shutdown 
+  exit
+
+  enable
+  int fast0/10
+  sw mode access
+  sw mode trunk
+  no shutdown 
+  exit
+
+2nd switch a giye
+     
+  enable
+  config term
+  int fast0/4
+  sw mode access
+  no shutdown 
+  exit
+
+  enable
+  int fast0/5
+  sw mode access
+  no shutdown 
+  exit
+  
+  enable
+  int fast0/6
+  sw mode access
+  no shutdown 
+  exit
+
+  enable
+  int fast0/10
+  sw mode access
+  sw mode trunk
+  no shutdown 
+  exit

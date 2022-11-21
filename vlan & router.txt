@@ -1,0 +1,94 @@
+akta swith a duita pc ak series r baki duita arek series a
+arekta switch a duita pc ak series r baki duita arek series
+
+switch duitar connection dite hobe
+switch duitai vlan dite hobe
+
+then first switch a giye==
+enable
+config ter
+int fast 0/1
+sw mode access
+sw acc vlan 101
+no shutdown
+exit
+int fast 0/2
+sw mode access
+sw acc vlan 101
+no shutdown
+exit
+int fast 0/3
+sw mode access
+sw acc vlan 102
+no shutdown
+exit
+int fast 0/4
+sw mode access
+sw acc vlan 102
+no shutdown
+exit
+enable
+config ter
+int fast 0/5
+sw mode access
+sw acc vlan 101
+no shutdown
+exit
+int fast 0/6
+sw mode access
+sw acc vlan 101
+no shutdown
+exit
+int fast 0/7
+sw mode access
+sw acc vlan 101
+no shutdown
+exit
+int fast 0/8
+sw mode access
+sw acc vlan 102
+no shutdown
+
+
+//Router er jonno
+int fast 0/9
+sw mode access
+sw acc vlan 101
+no shutdown
+
+int fast 0/10
+sw mode access
+sw acc vlan 102
+no shutdown
+
+int fast 0/11
+sw mode tru
+
+
+1 no switch e niye copy kore 2 no switch banate hobe.
+
+router a giye
+enable
+config term
+int giga 0/0/0
+ip address 192.168.5.1 255.255.255.0
+no shutdown
+exit
+enable
+config term
+int giga 0/0/1
+ip address 192.168.6.1 255.255.255.0
+no shutdown
+exit
+
+
+
+
+
+
+
+
+
+
+
+
